@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.0.0 — 2026-09-18
+
+### Features
+
+- add countdown timer with alarm
+
 ## v2.0.0 — 2026-09-18
 
 ### Features
