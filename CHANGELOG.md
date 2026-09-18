@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.2.0 — 2026-09-18
+
+### Features
+
+- add powered-by attribution to big clock display
+
 ## v3.1.0 — 2026-09-18
 
 ### Features
