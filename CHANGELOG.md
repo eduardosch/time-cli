@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.0.0 — 2026-09-18
+
+### Features
+
+- add stopwatch with enter-to-stop
+
+### Other
+
+- add project claude settings
+
 ## v1.0.0 — 2026-09-18
 
 ### Features
