@@ -1,0 +1,6 @@
+{
+  "enabledPlugins": {
+    "rules-commit@eduardosch-marketplace": true,
+    "rules-versioning@eduardosch-marketplace": true
+  }
+}
