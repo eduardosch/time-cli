@@ -30,7 +30,25 @@ print_commands() {
     done
 }
 
+usage() {
+    cat <<EOF
+
+  help.sh — Help
+
+  Shows a live clock alongside a reference table of all available commands,
+  their names, and a short description of what each one does.
+
+  Usage:
+    bash help.sh
+
+  Controls:
+    CTRL+C    Exit
+
+EOF
+}
+
 main() {
+    [[ "$1" == "-h" || "$1" == "--help" ]] && { usage; exit 0; }
     tput civis 2>/dev/null
     trap 'tput cnorm 2>/dev/null; clear' EXIT
     trap 'exit' INT TERM
@@ -51,4 +69,4 @@ main() {
     done
 }
 
-main
+main "$@"

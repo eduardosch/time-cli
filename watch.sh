@@ -2,7 +2,25 @@
 
 source "$(dirname "$0")/clock_lib.sh"
 
+usage() {
+    cat <<EOF
+
+  watch.sh — Live Clock
+
+  Displays the current time as a large block-digit clock that updates
+  every second.
+
+  Usage:
+    bash watch.sh
+
+  Controls:
+    CTRL+C    Exit
+
+EOF
+}
+
 main() {
+    [[ "$1" == "-h" || "$1" == "--help" ]] && { usage; exit 0; }
     tput civis 2>/dev/null
     trap 'tput cnorm 2>/dev/null; clear' EXIT
     trap 'exit' INT TERM
@@ -19,4 +37,4 @@ main() {
     done
 }
 
-main
+main "$@"

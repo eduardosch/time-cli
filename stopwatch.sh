@@ -7,7 +7,26 @@ format_time() {
     printf "%02d:%02d:%02d" $((secs/3600)) $(( (secs%3600)/60 )) $((secs%60))
 }
 
+usage() {
+    cat <<EOF
+
+  stopwatch.sh — Stopwatch
+
+  Counts up from zero using large block digits. The elapsed time is
+  displayed and keeps running until you press ENTER.
+
+  Usage:
+    bash stopwatch.sh
+
+  Controls:
+    ENTER     Stop and display the final time
+    CTRL+C    Exit immediately
+
+EOF
+}
+
 main() {
+    [[ "$1" == "-h" || "$1" == "--help" ]] && { usage; exit 0; }
     local start elapsed time_str key
     start=$(date +%s)
 
@@ -41,4 +60,4 @@ main() {
     printf '\n'
 }
 
-main
+main "$@"
