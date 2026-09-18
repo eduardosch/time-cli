@@ -45,4 +45,5 @@ print_big_time() {
         digit_row "$s" "$row"
         printf '\n'
     done
+    printf '%56s\n' 'powered by github.com/eduardosch'
 }
