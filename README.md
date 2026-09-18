@@ -73,15 +73,4 @@ That's literally it.
 
 ---
 
-## Curiosities
-
-- The entire renderer fits in ~50 lines of bash with zero external dependencies.
-- `tput` handles cursor hiding and in-place refresh — no `clear` flickering.
-- The timer uses wall-clock subtraction (`date +%s`) instead of a sleep loop, so it stays accurate even if the system is under load.
-- `read -t 0.1` is the refresh tick — it doubles as a non-blocking key listener.
-
----
-
-## Changelog
-
 See [CHANGELOG.md](CHANGELOG.md) for the full version history.
