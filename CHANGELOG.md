@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.2.1 — 2026-09-18
+
+### Other
+
+- fix clock example alignment in README
+
 ## v3.2.0 — 2026-09-18
 
 ### Features
