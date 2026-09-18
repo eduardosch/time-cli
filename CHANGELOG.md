@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.2.2 — 2026-09-18
+
+### Other
+
+- trim Curiosities section and Changelog heading from README
+
 ## v3.2.1 — 2026-09-18
 
 ### Other
