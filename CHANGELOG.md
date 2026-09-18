@@ -1,5 +1,12 @@
 # Changelog
 
+## v3.1.0 — 2026-09-18
+
+### Features
+
+- add -h/--help flag to all scripts
+- add help.sh with running clock and command reference
+
 ## v3.0.0 — 2026-09-18
 
 ### Features
